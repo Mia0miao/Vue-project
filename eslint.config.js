@@ -21,4 +21,9 @@ export default defineConfig([
 
   js.configs.recommended,
   ...pluginVue.configs['flat/essential'],
+  {
+    extends: [
+      'plugin:vue/vue3-recommended', // 确保使用 Vue 3 的规则
+    ],
+  },
 ])
