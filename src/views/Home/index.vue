@@ -1,4 +1,19 @@
+<script setup>
+import HomeBanner from './components/HomeBanner.vue'
+import HomeCategory from './components/HomeCategory.vue'    
+import HomeHot from './components/HomeHot.vue'
+import HomeNew from './components/HomeNew.vue'
+import HomeProduct from './components/HomeProduct.vue'
+import Homepanel from './components/Homepanel.vue'
+</script>
+
+
 <template>
-    <div>我是Home
+    <div class="container">
+      <HomeCategory />
+      <HomeBanner />
     </div>
-</template>
+    <HomeNew />
+    <HomeHot />
+    <HomeProduct />
+  </template>
